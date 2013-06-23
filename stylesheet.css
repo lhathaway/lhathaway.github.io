@@ -22,7 +22,9 @@ p {
 }
 
 img.align-center {
-	margin:0px auto;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 iframe {
