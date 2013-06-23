@@ -25,6 +25,7 @@ img.align-center {
 	display:block;
 	margin:0 auto;
 	width:50%;
+	border-radius:25px;
 }
 
 iframe.soundcloud {
