@@ -28,9 +28,8 @@ head {
 	background-color:#B8C4CC;
 }
 
-img {
-	margin-right:auto;
-	margin-left:auto;
+img.align-center {
+	margin:0px auto;
 }
 
 iframe {
