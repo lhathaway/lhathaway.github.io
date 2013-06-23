@@ -17,16 +17,17 @@ p {
 	color:#595959;
 	font-family:Titillium Web, sans-serif;
 	font-size:1em;
-	border:3px solid black;
 }
 
 head {
 	font-size:2em;
 	color:#595959;
+	border:1px solid #595959;
 }
 
 img {
-	margin:auto;
+	margin-right:auto;
+	margin-left:auto;
 }
 
 iframe {
