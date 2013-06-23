@@ -27,7 +27,8 @@ img.align-center {
 	margin-right:auto;
 }
 
-iframe {
+iframe.soundcloud {
+	display:block;
 	margin-left:auto;
 	margin-right:auto;
 }
