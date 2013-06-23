@@ -34,7 +34,10 @@ iframe.soundcloud {
 }
 
 #social-icons {
-	margin:0 auto;
+	display:block;
+	margin-right:auto;
+	margin-left:auto;
+	width:50%;
 }
 
 #bio-text {
