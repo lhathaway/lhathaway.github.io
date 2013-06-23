@@ -10,21 +10,22 @@ h4{
 
 body {
 	background-color:#eff4f7;
-	font-family:Titillium Web;
+	font-family:Verdana;
 }
 
 p {
 	color:#595959;
-	font-family:Titillium Web, sans-serif;
+	font-family:Verdana, sans-serif;
 	font-size:1em;
 }
 
 head {
-	font-size:2em;
+	font-size:3em;
 	color:#595959;
 	border:1px;
 	border-style:solid;
 	border-color:#595959;
+	background-color:#B8C4CC;
 }
 
 img {
