@@ -6,9 +6,14 @@ p {
 	color:#595959;
 	font-family:Titillium Web, sans-serif;
 	font-size:1em;
+	border:5px solid red;
 }
 
 head {
 	font-size:2em;
 	color:#595959;
+}
+
+iframe {
+	margin:auto;
 }
