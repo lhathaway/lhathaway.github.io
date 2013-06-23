@@ -22,7 +22,9 @@ p {
 head {
 	font-size:2em;
 	color:#595959;
-	border:1px solid #595959;
+	border:1px;
+	border-style:solid;
+	border-color:#595959;
 }
 
 img {
