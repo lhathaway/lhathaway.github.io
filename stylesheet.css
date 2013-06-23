@@ -33,7 +33,12 @@ iframe.soundcloud {
 	margin:0 auto;
 }
 
-div.social-icons {
+#social-icons {
 	display:block;
+	margin:0 auto;
+}
+
+#bio-text {
+	width:50%;
 	margin:0 auto;
 }
