@@ -19,13 +19,12 @@ p {
 	color:#595959;
 	font-family:Verdana, sans-serif;
 	font-size:1em;
-	margin-right:150px;
-	margin-left:150px;
 }
 
 img.align-center {
 	display:block;
 	margin:0 auto;
+	width:50%;
 }
 
 iframe.soundcloud {
