@@ -63,6 +63,7 @@ body {
 	width: 1024px;
 	margin: 0 auto;
 	font-family: helvetica, Arial, sans-serif;
+	background-image:url('assets/images/grass8.png');
 }
 
 header {
