@@ -120,7 +120,7 @@ footer ul li {
 }
 
 
-.opacity-rollover img {
+.opacity-rollover img:link {
 	/* Required for IE 5, 6, 7 */
 	/* ...or something to trigger hasLayout, like zoom: 1; */
 	width: 100%; 
