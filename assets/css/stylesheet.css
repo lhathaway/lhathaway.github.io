@@ -102,6 +102,10 @@ a {
 	font-weight:bold;
 }
 
+a:hover {
+	color:#7DCC58;
+}
+
 header ul li {
 	float:right;
 	padding-left: 30px;
