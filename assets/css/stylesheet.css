@@ -208,11 +208,9 @@ section p
 }
 
 aside {
-	width: 40%;
+	width: 400px;
 	float:right;
 	margin-top:30px;
-}
-
 }
 
 aside iframe {
