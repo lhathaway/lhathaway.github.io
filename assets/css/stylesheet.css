@@ -211,31 +211,14 @@ aside {
 	width: 40%;
 	float:right;
 	margin-top:30px;
+}
+
+}
+
+aside iframe {
 	opacity:0.8;
 }
 
-aside:hover {
-	width: 40%;
-	float:right;
-	margin-top:30px;
+aside iframe:hover {
 	opacity:0.9;
 }
-
-/* #bg {
-  position: fixed; 
-  top: -50%; 
-  left: -50%; 
-  width: 200%; 
-  height: 200%;
-}
-
-#bg img {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  margin: auto; 
-  min-width: 50%;
-  min-height: 50%;
-}*/
