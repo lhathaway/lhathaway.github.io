@@ -63,7 +63,8 @@ table {
 body {
 	width: 1024px;
 	margin: 0 auto;
-	font-family: UbuntuBold, helvetica, Arial, sans-serif;
+	font-family: helvetica, Arial, sans-serif;
+	background-image:url(../images/grass8.png);
 }
 
 header {
