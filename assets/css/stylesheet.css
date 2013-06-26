@@ -63,7 +63,7 @@ table {
 body {
 	width: 1024px;
 	margin: 0 auto;
-	font-family: helvetica, Arial, sans-serif;
+	font-family: UbuntuBold, helvetica, Arial, sans-serif;
 }
 
 header {
@@ -216,7 +216,7 @@ aside:hover {
 	opacity:0.9;
 }
 
-#bg {
+/* #bg {
   position: fixed; 
   top: -50%; 
   left: -50%; 
@@ -233,4 +233,4 @@ aside:hover {
   margin: auto; 
   min-width: 50%;
   min-height: 50%;
-}
+}*/
