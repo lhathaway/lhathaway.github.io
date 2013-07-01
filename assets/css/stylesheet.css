@@ -105,14 +105,11 @@ a {
 
 p a {
 	font-weight:normal;
+	color:#ff7700;
 }
 
 a:hover {
 	color:#ff7700;
-}
-
-p a:hover {
-	font-weight:bold;
 }
 
 header ul li {
