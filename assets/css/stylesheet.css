@@ -103,12 +103,16 @@ a {
 	font-weight:bold;
 }
 
-/* a:hover {
-	color:#7DCC58;
-}*/
+p a {
+	font-weight:normal;
+}
 
 a:hover {
 	color:#ff7700;
+}
+
+p a:hover {
+	font-weight:bold;
 }
 
 header ul li {
@@ -211,6 +215,8 @@ section {
 section p 
 {
 	margin-top:30px;
+	margin-left:5px;
+	margin-bottom:10px;
 }
 
 aside {
