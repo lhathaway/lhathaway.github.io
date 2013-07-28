@@ -4402,7 +4402,7 @@ header {
     left: 20px; }
   /* line 369, screen.sass */
   header .album-mini {
-    background: #212121 url(../images/albumcover.jpg) no-repeat;
+    background: #212121 url(../images/albumcover.png) no-repeat;
     display: block;
     height: 110px;
     width: 110px;
