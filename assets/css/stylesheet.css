@@ -131,7 +131,6 @@ footer ul li {
 	font-size: 20px;
 }
 
-
 .opacity-rollover img:hover {
 	/* Required for IE 5, 6, 7 */
 	/* ...or something to trigger hasLayout, like zoom: 1; */
