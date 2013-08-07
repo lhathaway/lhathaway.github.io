@@ -1,96 +1,457 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Luke Hathaway &middot; Humor, music, insight.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<head>
-<title>
-	Luke Hathaway
-</title>
-<link type="text/css" rel="stylesheet" href="assets/css/stylesheet.css"/> 
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 
-<script type="text/javascript" src="assets/script/jquery.js"></script>
+    <style> 
 
-<script type="text/javascript" src="assets/script/backstretch.js"></script>	
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
 
-  ga('create', 'UA-41964712-1', 'lukehathaway.com');
-  ga('send', 'pageview');
 
-</script>
-</head>
 
-<body>
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
 
-	<header>
-	<h1>luke hathaway</h1>
-		<nav>
-			<ul>
-                <li><a href="bootstrap/cisco/index.html" target="_blank">project</li>
-				<li><a href="mailto:lwhathaway@gmail.com" target="_blank">contact</a></li>
-				<li><a href="assets/files/Luke.Hathaway.Resume.pdf" target="_blank">resume</a></li>
-				<li><a href="http://www.lukehathaway.com" target="_blank">blog</a></li>
-			</ul>
-		</nav>	
-	</header>
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
 
-	<hr>
+    }
 
-	<div id="content">
-		<h2>
-			live, laugh, create
-		</h2>
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
 
-		<section>
-			<p>
-				Hi! I'm Luke. I have joined the Marketing track at <a href="http://startupinstitute.com" targer="_blank">Startup Institute</a> to hone my technical skills, align my career with my passions, and forge connections with the incredible community of people that the Institute has inspired all over the globe. I hope to join a company with a mission that aggressively challenges the status quo and empowers new and unique experiences. 
-			</p>
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
 
-			<p>
-				Passion is a sticky word, though, and one that, when not directed by market opportunity, resides squarely within the realm of "hobby." Richard Banfield, founder and CEO of <a href="http://freshtilledsoil.com" target="_blank">Fresh Tilled Soil</a>, described a fulfilling career as "hard work that you don't mind doing." 
-			</p>
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
 
-			<p>
-				When asked to define our core values, I eventually narrowed it down to three: always be creative, forge meaningful connections, and never stop learning. To get a better idea of my thought process, wierdness, and love of all manner of humor, check the <a href="http://www.lukehathaway.com">blogroll</a>.
-			</p>
-		</section>
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
 
-		<aside>
-			<div id="wistia_qpgjbcuunw" class="wistia_embed" style="width:400px;height:253px;" data-video-width="400" data-video-height="227">&nbsp;</div>
-			<script charset="ISO-8859-1" src="http://fast.wistia.com/static/concat/E-v1%2Csocialbar-v1.js"></script>
-				<script>
-					wistiaEmbed = Wistia.embed("qpgjbcuunw", {
- 					version: "v1",
-  					videoWidth: 400,
-  					videoHeight: 227,
-  					playerColor: "ff7700",
-  					endVideoBehavior: "reset",
-  					plugin: {
-   						"socialbar-v1": {
-      					buttons: "twitter-facebook"
-    					}
-  						}
-						});
-				</script>
 
-			<iframe class="soundcloud" width="100%" height="400" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fusers%2F11311226"></iframe>
-		</aside>
-	</div>
 
-	<footer class="opacity-rollover">
-		<hr>
-		<ul>
-			<li><a href="http://www.twitter.com/lwhathaway" target="_blank"><img src="assets/images/twitter.png" /></a></li>
-			<li><a href="http://www.facebook.com/luke.hathaway.33" target="_blank"><img src="assets/images/facebook.png" /></a></li>
-			<li><a href="http://www.linkedin.com/in/lwhathaway/" target="_blank"><img src="assets/images/linkedin.png" /></a></li>
-		</ul>
-	</footer>
-	<script>
-		$.backstretch("assets/images/grass8.png");
-	</script>
-</body>
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
 
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+
+
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#">luke hathaway</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="assets/files/Luke.Hathaway.Resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="http://lukehathaway.com">Blog</a></li>
+                <li><a href="http://soundcloud.com/lukehathaway">Music</a></li>
+                <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="bootstrap/cisco/index.html">Cisco Homepage</a></li>
+                    <li><a href="bootstrap/supergroup/index.html">Supergroup Player</a></li>
+                    <li class="divider"></li>
+                    <li class="nav-header">Other stuff</li>
+                    <li><a href="#">Drink Recipes</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="assets/img/harbor.jpg" alt="harbor">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Boston. Our f*cking city.</h1>
+              <p class="lead">Times are changing, but one thing that never changes is Boston's love for our city.</p>
+              <a class="btn btn-large btn-primary" href="http://onefundboston.org" target="_blank">Count on it.</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/img/home.jpg" alt="home">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Kid's a mystery.</h1>
+              <p class="lead">Located in Boston, I'm the area's first micro-weirdness coordinator. Named after a book, I'm hand-crafted to deliver the ultimate experience in modern-day enthusiasm, innovation, and ingenuity, using only natural ingredients.</p>
+              <a class="btn btn-large btn-primary" href="http://lukehathaway.com">Fascinated?</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/img/dartmouthhistory.jpg" alt="dartmouth">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>A little history.</h1>
+              <p class="lead">A Dartmouth kid (yep, Dartmouth, MA and Hanover, NH). Wherever the adventure takes me, I'll have the salt in my hair and the hill winds in my breath.</p>
+              <a class="btn btn-large btn-primary" href="#">A little more history.</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="span4">
+          <img src="assets/img/moustache.jpg" class="img-circle" data-src="holder.js/140x140">
+          <h2>I'm kinda weird.</h2>
+          <p>Don't take my word for it. I was part of a brain study for indecent teens when I was 23. There weren't any hard conclusionss, but a team of doctors couldn't figure out whether I meant, "mayonnaise" or "chicken fingers," despite their most powerful praying.</p>
+          <p><a class="btn" href="#">The report &raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img src="assets/img/snowman.jpg" class="img-circle" data-src="holder.js/140x140">
+          <h2>It isn't all fun.</h2>
+          <p>Any snowman that's died in a fire will tell you. Sometimes it's about buckling down and getting shit done. I love to be creative, think on my feet, and help find the way out of the flames. Freeze on, little fella, I'll chill you out.</p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img src="assets/img/bandedit.jpg" class="img-circle" data-src="holder.js/140x140">
+          <h2>Music thrills.</h2>
+          <p>Many of the best moments of my life have been playing music. Whether I'm jamming with someone for the first time or trying to recall some old Nuno hits, I'm truly happy when I'm working with other humans on aural pleasures.</p>
+          <p><a class="btn" href="http://soundcloud.com/lukehathaway" target="blank">Latest sounds &raquo;</a></p>
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="assets/img/openroad2.jpg">
+        <h2 class="featurette-heading">The road <span class="muted">ahead.</span></h2>
+        <p class="lead">This is a time of change. I built my base in financial services. My friends, and even my parents, were a little surprised about that. When I told people that I had left, the reaction was overwhelmingly, "finally." My early career taught me an immense amount, though, and it helped me to turn vision into <b>results</b>.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-left" src="assets/img/friendsfeaturette.jpg">
+        <h2 class="featurette-heading">It's all about connections with <span class="muted">people we love.</span></h2>
+        <p class="lead">Whether it's making music with friends, chatting with family, or simply cracking a beer with an old friend, the things that really make me tick are the connections I have with the people around me. I try not to let them forget it.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="assets/img/crapscrop.jpg">
+        <h2 class="featurette-heading">You can't win <span class="muted">if you don't play.</span></h2>
+        <p class="lead">It seems frightening to use a gambling mantra as a life mantra, but if I don't take some (calculated) risks, I will never get the chance to realize my risky dreams! The support of my friends and family makes all the difference, and helps me feel like I'm making the right move when I roll the dice.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2013 Luke Hathaway &middot; <a href="#">Privacy is cool.</a> &middot; <a href="#">Terms are irrelevant.</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+    <script src="../assets/js/holder/holder.js"></script>
+  </body>
 </html>

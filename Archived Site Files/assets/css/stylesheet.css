@@ -1,0 +1,230 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color:#eff4f7;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END OF RESET - Start of Your CSS*/
+@font-face {
+    font-family: 'UbuntuBold';
+    src: url('fonts/Ubuntu-B-webfont.eot');
+    src: url('fonts/Ubuntu-B-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Ubuntu-B-webfont.woff') format('woff'),
+         url('fonts/Ubuntu-B-webfont.ttf') format('truetype'),
+         url('fonts/Ubuntu-B-webfont.svg#UbuntuBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	width: 1024px;
+	margin: 0 auto;
+	font-family: helvetica, Arial, sans-serif;
+}
+
+header {
+	height:70px;
+}
+
+p {
+	font-size:17px;
+	line-height:1.3em;
+	margin-top: .75em;
+}
+
+h1 { 
+	font-family: 'UbuntuBold';
+	font-weight: normal;
+    font-style: normal;
+	font-size:50px;
+	float:left;
+	margin-top: 10px;
+}
+
+h2 { 
+	font-family: 'UbuntuBold';
+	font-size:20px;
+	margin: 10px 0 15px 0; 
+	text-align:left; 
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color:black;
+	font-weight:bold;
+}
+
+p a {
+	font-weight:normal;
+	color:#ff7700;
+}
+
+a:hover {
+	color:#ff7700;
+}
+
+header ul li {
+	float:right;
+	padding-left: 30px;
+	margin-top:44px;
+	font-size: 20px;
+}
+
+footer {
+	height:100px;
+	clear:both;
+	background-color:rgba(255,255,255,.5);
+}
+
+footer ul li {
+	float:left;
+	padding: 10px;
+	font-size: 20px;
+}
+
+.opacity-rollover img:hover {
+	/* Required for IE 5, 6, 7 */
+	/* ...or something to trigger hasLayout, like zoom: 1; */
+	width: 100%; 
+		
+	/* Theoretically for IE 8 & 9 (more valid) */	
+	/* ...but not required as filter works too */
+	/* should come BEFORE filter */
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+	
+	/* This works in IE 8 & 9 too */
+	/* ... but also 5, 6, 7 */
+	filter: alpha(opacity=75);
+	
+	/* Older than Firefox 0.9 */
+	-moz-opacity:0.75;
+	
+	/* Safari 1.x (pre WebKit!) */
+	-khtml-opacity: 0.75;
+    
+	/* Modern!
+	/* Firefox 0.9+, Safari 2?, Chrome any?
+	/* Opera 9+, IE 9+ */
+	opacity: 0.75;
+
+	zoom: 1;
+	filter: alpha(opacity=75);
+	opacity: 0.5;
+}
+
+.opacity-rollover img:link {
+	/* Required for IE 5, 6, 7 */
+	/* ...or something to trigger hasLayout, like zoom: 1; */
+	width: 100%; 
+		
+	/* Theoretically for IE 8 & 9 (more valid) */	
+	/* ...but not required as filter works too */
+	/* should come BEFORE filter */
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	
+	/* This works in IE 8 & 9 too */
+	/* ... but also 5, 6, 7 */
+	filter: alpha(opacity=100);
+	
+	/* Older than Firefox 0.9 */
+	-moz-opacity:1.0;
+	
+	/* Safari 1.x (pre WebKit!) */
+	-khtml-opacity: 1.0;
+    
+	/* Modern!
+	/* Firefox 0.9+, Safari 2?, Chrome any?
+	/* Opera 9+, IE 9+ */
+	opacity: 1.0;
+
+	zoom: 1;
+	filter: alpha(opacity=100);
+	opacity: 0.5;
+}
+
+
+#content {
+	margin-bottom: 20px;
+	overflow: hidden;
+	clear: both; 
+}
+
+#wistia_qpgjbcuunw {
+	float:left;
+}
+
+section {
+	width:55%;
+	float: left;
+	background-color:rgba(255,255,255,0.7);
+}
+
+section p 
+{
+	margin-top:30px;
+	margin-left:5px;
+	margin-bottom:10px;
+}
+
+aside {
+	width: 400px;
+	float:right;
+	margin-top:30px;
+}
+
+aside iframe {
+	opacity:0.8;
+}
+
+aside iframe:hover {
+	opacity:0.9;
+}
